@@ -2,7 +2,6 @@
 
 namespace App\Services\Search;
 
-use App\Services\Logs\LogService;
 use App\Services\Search\DTO\ApiSearchDTO;
 use App\Services\Search\Repositories\SatisfiedSearchRequestsRepository;
 use App\Services\Search\Translators\ApiSearchTranslator;
@@ -24,8 +23,7 @@ class SearchService
         private OfferSearchRepository $offerSearchRepository,
         private UnsatisfiedSearchRequestHandler $unsatisfiedSearchRequestHandler,
         private ApiSearchTranslator $apiSearchTranslator,
-        private SatisfiedSearchRequestsRepository $satisfiedSearchRequestsRepository,
-        private LogService $logService,
+        private SatisfiedSearchRequestsRepository $satisfiedSearchRequestsRepository
     ) {}
 
     /**
